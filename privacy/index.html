@@ -265,7 +265,7 @@
     </header>
     <main id="main" class="wrap">
       <h1>BrainMaxxing Privacy Policy</h1>
-      <p class="meta">Last updated: October 8, 2026</p>
+      <p class="meta">Last updated: October 9, 2026</p>
       <p>
         This policy explains how Xanthos Labs handles information when you use
         BrainMaxxing, including its Android app
@@ -286,8 +286,9 @@
         <h2>2. Information You Provide</h2>
         <ul>
           <li>
-            Your display name and preferences, such as language, haptic feedback
-            and the usage/diagnostics choice.
+            Your display name and preferences, such as language, haptic
+            feedback, optional push notifications and the usage/diagnostics
+            choice.
           </li>
           <li>
             If you choose Google sign-in: available full, given and family
@@ -319,6 +320,14 @@
             Backup state: account/user IDs, linked guest-history IDs, an
             app-generated writer identifier, energy use, saved challenges,
             synchronization checkpoints and app version/platform.
+          </li>
+          <li>
+            If you enable push notifications: an app-generated installation ID,
+            Expo push token, Firebase account ID, mobile platform and
+            registration timestamp. User-linked notification delivery records
+            store a device ID, hashed token, Expo receipt ID and dispatch
+            status, without copying your game history into the notification
+            service.
           </li>
           <li>
             Firebase services process installation identifiers, user-agent and
@@ -378,11 +387,12 @@
       <section>
         <h2>5. Third-Party Services</h2>
         <p>
-          We use Google Sign-In and Google Firebase to provide the functions
-          described here. Data is processed by service providers for these
-          purposes; it is not sold by Xanthos Labs or sent to an advertising
-          network in the current app. Service providers may process technical
-          information under their own terms and privacy notices.
+          We use Google Sign-In, Google Firebase and optional Expo push
+          notifications to provide the functions described here. Data is
+          processed by service providers for these purposes; it is not sold by
+          Xanthos Labs or sent to an advertising network in the current app.
+          Service providers may process technical information under their own
+          terms and privacy notices.
         </p>
         <p>
           See
@@ -399,7 +409,17 @@
             >GitHub Privacy Statement</a
           >. These pages contain no analytics scripts, tracking pixels or cookie
           banners; they set no application cookies. Email support is handled
-          through Gmail.
+          through Gmail. Optional notifications are routed through Expo Push
+          Service and Google Firebase Cloud Messaging on Android or Apple Push
+          Notification service on iOS. These providers process push tokens,
+          notification contents and delivery metadata to deliver messages. See
+          <a href="https://expo.dev/privacy">Expo’s Privacy Policy</a> and
+          <a href="https://www.apple.com/legal/privacy/"
+            >Apple’s Privacy Policy</a
+          >. You can enable or disable notifications on each phone in
+          <strong>Profile → Preferences → Push notifications</strong> or your
+          phone’s notification settings. Enabling notifications is optional and
+          does not enable usage analytics.
         </p>
       </section>
       <section>
@@ -412,7 +432,12 @@
           <li>
             <strong>Cloud Firestore:</strong> private profiles, preferences,
             energy/saved sessions, permanent game results, progress summaries
-            and synchronization metadata.
+            and synchronization metadata, plus optional notification
+            registrations and delivery records.
+          </li>
+          <li>
+            <strong>Firebase Cloud Messaging:</strong> delivers optional Android
+            push notifications routed through Expo Push Service.
           </li>
           <li>
             <strong>Firebase Remote Config:</strong> downloads configuration
@@ -516,9 +541,15 @@
         <h2>13. Account and Data Deletion</h2>
         <p>
           Use <strong>Profile → Privacy &amp; data → Delete my data</strong> to
-          delete the account and associated application data. This requires an
-          internet connection; Google-linked accounts require confirmation of
-          your Google identity. It does not delete your Google account.
+          delete the account and associated application data, including push
+          device registrations, user-linked delivery records and targeted
+          notification campaigns. Notification registration and delivery records
+          are kept until account deletion unless an obsolete registration is
+          removed sooner when you opt out. Disabling notifications stops future
+          sends after the device synchronizes; it cannot recall messages already
+          handed to delivery providers. This requires an internet connection;
+          Google-linked accounts require confirmation of your Google identity.
+          It does not delete your Google account.
         </p>
         <p>
           You can also request deletion without reinstalling the app by emailing
