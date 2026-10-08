@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrainMaxxing Terms of Service</title>
+    <meta
+      name="description"
+      content="Terms for using BrainMaxxing games and account features."
+    />
+    <meta name="theme-color" content="#f5f1e9" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        color-scheme: light dark;
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: #f5f1e9;
+        color: #252822;
+        font:
+          16px/1.75 system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+      a {
+        color: #80582e;
+        text-underline-offset: 4px;
+      }
+      a:hover {
+        color: #4d391e;
+      }
+      a:focus-visible {
+        outline: 3px solid #936b3d;
+        outline-offset: 5px;
+        border-radius: 3px;
+      }
+      .wrap {
+        width: min(100% - 40px, 840px);
+        margin: auto;
+      }
+      header {
+        border-bottom: 1px solid #dfd1bd;
+        padding: 22px 0;
+      }
+      header .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .brand {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: inherit;
+        text-decoration: none;
+      }
+      .tag {
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #68665d;
+      }
+      main {
+        padding: 55px 0 70px;
+        min-height: 65vh;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Georgia, serif;
+        line-height: 1.22;
+        font-weight: normal;
+      }
+      h1 {
+        font-size: clamp(34px, 6vw, 52px);
+        letter-spacing: -0.025em;
+        margin: 0 0 20px;
+      }
+      h2 {
+        font-size: 25px;
+        margin: 38px 0 14px;
+      }
+      h3 {
+        font-size: 21px;
+        margin: 25px 0 10px;
+      }
+      p {
+        margin: 0 0 18px;
+      }
+      .intro {
+        font-size: 19px;
+        color: #68665d;
+        max-width: 650px;
+      }
+      .meta {
+        font-size: 14px;
+        color: #68665d;
+        margin-bottom: 30px;
+      }
+      .panel {
+        background: #fcf9f3;
+        border: 1px solid #dfd1bd;
+        border-radius: 16px;
+        padding: 24px;
+        margin: 25px 0;
+        overflow-wrap: anywhere;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .card {
+        display: block;
+        border: 1px solid #dfd1bd;
+        background: #fcf9f3;
+        border-radius: 16px;
+        padding: 26px;
+        text-decoration: none;
+        color: inherit;
+      }
+      .card:hover {
+        border-color: #936b3d;
+      }
+      .card strong {
+        display: block;
+        font:
+          25px Georgia,
+          serif;
+        margin-bottom: 9px;
+      }
+      .card span {
+        font-size: 14px;
+        color: #68665d;
+      }
+      .button {
+        display: inline-block;
+        background: #80582e;
+        color: #fff !important;
+        border-radius: 9px;
+        padding: 11px 18px;
+        text-decoration: none;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+      }
+      ul,
+      ol {
+        padding-left: 24px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      footer {
+        border-top: 1px solid #dfd1bd;
+        padding: 25px 0 35px;
+        font-size: 14px;
+        color: #68665d;
+      }
+      footer nav {
+        display: flex;
+        gap: 12px 20px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      code {
+        font-size: 0.9em;
+        overflow-wrap: anywhere;
+      }
+      details {
+        border-bottom: 1px solid #dfd1bd;
+        padding: 18px 0;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+      details p {
+        margin: 14px 0 0;
+      }
+      .skip {
+        position: absolute;
+        top: -90px;
+        left: 20px;
+        background: #fcf9f3;
+        padding: 8px;
+      }
+      .skip:focus {
+        top: 8px;
+      }
+      @media (max-width: 540px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        main {
+          padding-top: 35px;
+        }
+        .panel {
+          padding: 18px;
+        }
+        .tag {
+          font-size: 11px;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #1c211d;
+          color: #f3eee5;
+        }
+        a {
+          color: #d3b184;
+        }
+        a:hover {
+          color: #ecd2ae;
+        }
+        .intro,
+        .meta,
+        .tag,
+        footer,
+        .card span {
+          color: #b9b9ab;
+        }
+        header,
+        footer,
+        details {
+          border-color: #41473b;
+        }
+        .panel,
+        .card {
+          background: #252b25;
+          border-color: #41473b;
+        }
+        .skip {
+          background: #252b25;
+        }
+        .card {
+          color: inherit;
+        }
+        .button {
+          background: #916c41;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <div class="wrap">
+        <a class="brand" href="/brainmaxxing-legal/">BrainMaxxing</a
+        ><span class="tag">Legal &amp; Support</span>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <h1>BrainMaxxing Terms of Service</h1>
+      <p class="meta">Last updated: October 8, 2026</p>
+      <p>
+        These terms apply to BrainMaxxing, provided by Xanthos Labs. Please read
+        them before using the app.
+      </p>
+      <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By using BrainMaxxing, you agree to these terms. If you do not agree,
+          stop using the service. These terms do not limit rights that cannot be
+          waived under applicable law.
+        </p>
+      </section>
+      <section>
+        <h2>2. Eligibility</h2>
+        <p>
+          The app is intended for users aged 13 and older. Meet any higher
+          minimum age and parental-consent requirements applicable in your
+          country. Do not provide information you are not entitled to share.
+        </p>
+      </section>
+      <section>
+        <h2>3. Use of the Service</h2>
+        <p>
+          BrainMaxxing offers memory, focus, logic and speed games, with
+          gameplay scores, levels, daily energy and progress tracking. Use it
+          for personal, lawful purposes. Features and energy rules may change;
+          no minimum score or real-world outcome is guaranteed.
+        </p>
+      </section>
+      <section>
+        <h2>4. User Accounts</h2>
+        <p>
+          You can start as a guest or use optional Google sign-in. Linking
+          Google can preserve guest progress and allow recovery on another
+          device. Guest-only access may be lost after uninstalling or clearing
+          device storage. Keep track of which Google account you use.
+        </p>
+      </section>
+      <section>
+        <h2>5. Account Security</h2>
+        <p>
+          Protect your device and Google account. Do not share credentials or
+          impersonate another user. Contact support if you suspect unauthorized
+          access. Xanthos Labs does not need your Google password or sign-in
+          codes.
+        </p>
+      </section>
+      <section>
+        <h2>6. Purchases, Subscriptions and Premium Features</h2>
+        <p>
+          The current app has no paid subscriptions, in-app purchases or paid
+          premium tier. Daily energy is a gameplay limit and is not a purchase.
+          If paid features are introduced, their pricing, conditions and
+          relevant terms will be presented before purchase.
+        </p>
+      </section>
+      <section>
+        <h2>7. Acceptable Use</h2>
+        <p>
+          Do not interfere with the service, bypass account security or access
+          controls, abuse support channels, access other people’s data, or use
+          the app for unlawful activity. Do not manipulate service records or
+          distribute unauthorized copies in ways that infringe intellectual
+          property rights.
+        </p>
+      </section>
+      <section>
+        <h2>8. Intellectual Property</h2>
+        <p>
+          The app’s original branding, design, code and content belong to
+          Xanthos Labs or their respective licensors. Third-party components
+          retain their own licenses. These terms give you permission to use the
+          app; they do not transfer ownership of its intellectual property. You
+          retain any rights you have in information you provide.
+        </p>
+      </section>
+      <section>
+        <h2>9. Third-Party Services</h2>
+        <p>
+          Google Sign-In, Firebase, GitHub Pages and email support
+          infrastructure are third-party services subject to their applicable
+          terms. Their availability and behavior are outside our direct control.
+        </p>
+      </section>
+      <section>
+        <h2>10. Gameplay and Health Disclaimer</h2>
+        <p>
+          BrainMaxxing is intended for entertainment and self-improvement
+          through cognitive games. It is not a substitute for professional
+          medical advice, diagnosis or treatment. Brain Score and skill levels
+          measure in-app gameplay progress; they are not validated IQ tests or
+          clinical assessments. We do not promise improved intelligence,
+          prevention of disease or any particular cognitive or medical result.
+        </p>
+      </section>
+      <section>
+        <h2>11. Availability and Limitation of Liability</h2>
+        <p>
+          We aim to provide a useful service, but cannot guarantee uninterrupted
+          access, error-free operation or recovery of every record. To the
+          extent permitted by applicable law, the service is provided as
+          available, and Xanthos Labs is not responsible for indirect losses
+          arising from its use. Nothing in these terms excludes liability or
+          consumer rights that applicable law does not allow us to exclude.
+        </p>
+      </section>
+      <section>
+        <h2>12. Account Suspension and Termination</h2>
+        <p>
+          You may stop using the app and request account deletion. Access may be
+          restricted where reasonably necessary to address abuse, security risks
+          or legal obligations. Suspension is not an automatic account-deletion
+          request.
+        </p>
+      </section>
+      <section>
+        <h2>13. Changes to the Service</h2>
+        <p>
+          Games, scoring, energy limits and features may be updated or
+          discontinued. Previously earned gameplay metrics are not money or a
+          financial entitlement. We will communicate significant changes through
+          appropriate notices.
+        </p>
+      </section>
+      <section>
+        <h2>14. Changes to These Terms</h2>
+        <p>
+          Updates will be published on this page with a new last-updated date.
+          Where required, we will provide additional notice or seek consent. If
+          you do not accept updated terms, stop using the service.
+        </p>
+      </section>
+      <section>
+        <h2>15. Privacy and Contact</h2>
+        <p>
+          Read the <a href="/brainmaxxing-legal/privacy/">Privacy Policy</a> to
+          understand data handling and the
+          <a href="/brainmaxxing-legal/delete-account/">Delete Account page</a>
+          for deletion options.
+        </p>
+        <p>
+          Developer: Xanthos Labs<br />Email:
+          <a href="mailto:xanthoslabs@gmail.com">xanthoslabs@gmail.com</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <strong>BrainMaxxing</strong> · Xanthos Labs
+        <nav aria-label="Legal and support">
+          <a href="/brainmaxxing-legal/">Home</a
+          ><a href="/brainmaxxing-legal/privacy/">Privacy Policy</a
+          ><a href="/brainmaxxing-legal/delete-account/">Delete Account</a
+          ><a href="/brainmaxxing-legal/terms/">Terms of Service</a
+          ><a href="/brainmaxxing-legal/support/">Support</a>
+        </nav>
+        <a href="mailto:xanthoslabs@gmail.com">xanthoslabs@gmail.com</a>
+        <p>© 2026 Xanthos Labs</p>
+      </div>
+    </footer>
+  </body>
+</html>
