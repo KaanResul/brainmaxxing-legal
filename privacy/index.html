@@ -265,7 +265,7 @@
     </header>
     <main id="main" class="wrap">
       <h1>BrainMaxxing Privacy Policy</h1>
-      <p class="meta">Last updated: October 9, 2026</p>
+      <p class="meta">Last updated: October 22, 2026</p>
       <p>
         This policy explains how Xanthos Labs handles information when you use
         BrainMaxxing, including its Android app
@@ -275,9 +275,10 @@
         <h2>1. Information We Collect</h2>
         <p>
           BrainMaxxing collects account information, game activity and technical
-          information to operate the app and back up progress. Games can run
-          offline, but the app creates an anonymous Firebase identity and backs
-          up data when an internet connection is available. Optional Google
+          information to operate the app and back up progress. An internet
+          connection is required. Local records protect saved progress during
+          brief interruptions. The app creates an anonymous Firebase identity
+          and backs up progress. Optional Google
           sign-in connects guest progress to an account that can be recovered on
           another device.
         </p>
@@ -320,6 +321,18 @@
             Backup state: account/user IDs, linked guest-history IDs, an
             app-generated writer identifier, energy use, saved challenges,
             synchronization checkpoints and app version/platform.
+          </li>
+          <li>
+            Service activity: server-received last active and last contact times,
+            usage session identifiers and approximate foreground duration,
+            last reported screen, app version/platform, game start/completion or
+            abandonment actions, account linking, profile update actions and
+            synchronization success/error codes. These private Firestore records
+            support account operations and troubleshooting. They are separate
+            from optional Firebase Analytics; they do not include screen
+            recordings, typed text, passwords or an advertising identifier.
+            Foreground reports are normally limited to once every five minutes,
+            with additional reports for session boundaries and key actions.
           </li>
           <li>
             If you enable push notifications: an app-generated installation ID,
@@ -370,8 +383,9 @@
             across devices.
           </li>
           <li>
-            Understand usage and investigate crashes when you enable
-            diagnostics.
+            Maintain account activity and service status for support and
+            troubleshooting. Additional Firebase Analytics and Crashlytics
+            collection runs only when you enable diagnostics.
           </li>
           <li>
             Respond to support/deletion requests, verify account ownership and
@@ -504,7 +518,8 @@
       <section>
         <h2>12. Data Retention</h2>
         <p>
-          Cloud game history, profile information and progress are kept until
+          Cloud game history, profile information, progress and service activity
+          records are kept until
           you delete them or make a verified deletion request; there is no
           automatic age-based deletion of game history. Local history normally
           caches the latest 500 results plus unsent results and may temporarily
@@ -541,7 +556,8 @@
         <h2>13. Account and Data Deletion</h2>
         <p>
           Use <strong>Profile → Privacy &amp; data → Delete my data</strong> to
-          delete the account and associated application data, including push
+          delete the account and associated application data, including service
+          activity summaries, usage sessions and action history, as well as push
           device registrations, user-linked delivery records and targeted
           notification campaigns. Notification registration and delivery records
           are kept until account deletion unless an obsolete registration is
